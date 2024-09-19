@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="styles.css" rel="stylesheet">
+    <title>My Webpage</title>
+</head>
+<body>
+    <div class="form">
+            <h2>Login</h2>
+            <input class="user" type="text" placeholder="user name" required>
+            <input class="pass" type="password" placeholder="password"required>
+            <div>
+                <button class="ss" onclick = 'checkLogin1()'>Home</button>
+                <button class="ss" onclick = 'checkLogin2()'>Skills</button>
+                <button class="ss" onclick = 'checkLogin3()'>Hobbies</button>
+            </div>
+    </div>
+
+
+    <script>
+        function checkLogin1() {
+            var username = document.querySelector(".user").value;
+            var password = document.querySelector(".pass").value;
+
+            // Define the correct username and password
+            var correctUsername = "enter"; // Set your desired username here
+            var correctPassword = "12345"; // Set your desired password here
+
+            if (username === correctUsername && password === correctPassword) {
+                window.location.href = "index2.html"; // Redirect to the target page
+            } else {
+                alert("Incorrect username or password. Please try again.");
+            }
+        }
+
+        function checkLogin2() {
+            var username = document.querySelector(".user").value;
+            var password = document.querySelector(".pass").value;
+
+            // Define the correct username and password
+            var correctUsername = "enter"; // Set your desired username here
+            var correctPassword = "12345"; // Set your desired password here
+
+            if (username === correctUsername && password === correctPassword) {
+                window.location.href = "index3.html"; // Redirect to the target page
+            } else {
+                alert("Incorrect username or password. Please try again.");
+            }
+        }
+
+        function checkLogin3() {
+            var username = document.querySelector(".user").value;
+            var password = document.querySelector(".pass").value;
+
+            // Define the correct username and password
+            var correctUsername = "enter"; // Set your desired username here
+            var correctPassword = "12345"; // Set your desired password here
+
+            if (username === correctUsername && password === correctPassword) {
+                window.location.href = "index4.html"; // Redirect to the target page
+            } else {
+                alert("Incorrect username or password. Please try again.");
+            }
+        }
+</script>
+</body>
+</html>
